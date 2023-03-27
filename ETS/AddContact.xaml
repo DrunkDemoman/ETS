@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ETS.AddContact"
+             Title="AddContact">
+    <VerticalStackLayout>
+        <Label
+                Text="Add Contact"
+                SemanticProperties.HeadingLevel="Level1"
+                FontSize="32"
+                HorizontalOptions="Center" />
+
+
+        <Label Text="Name"/>
+        <Entry x:Name="name"/>
+        
+        <Label Text="Company"/>
+        <Entry x:Name="company"/>
+        
+        <Label Text="Email"/>
+        <Entry x:Name="email"/>
+        
+        <Label Text="Company Number"/>
+        <Entry x:Name="companynumber"/>
+        
+        <Label Text="Phone Number"/>
+        <Entry x:Name="phonenumber"/>
+        
+        
+        <Button Text="Submit"
+                Clicked="OnSubmitButtonClicked" />
+    </VerticalStackLayout>
+
+
+
+</ContentPage>

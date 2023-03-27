@@ -7,7 +7,6 @@ using System.Threading.Tasks;
 using SQLite;
 using ETS.Models;
 using System.ComponentModel;
-using Xamarin.Google.Crypto.Tink.Signature;
 
 namespace ETS
 {
@@ -73,6 +72,7 @@ namespace ETS
             {
                 StatusMessage = string.Format("Failed to retrieve data");
             }
+            return new List<CompanyContact>();
 
         }
 
