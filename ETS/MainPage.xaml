@@ -15,7 +15,25 @@
                 FontSize="32"
                 HorizontalOptions="Center" />
 
-           
+            <CollectionView x:Name="contactList" Grid.Row="4">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="2*" />
+                            </Grid.ColumnDefinitions>
+
+                            <Label Text="{Binding Id}" />
+                            <Label Grid.Column="1" Text="{Binding Name}" />
+                            <Label Grid.Column="1" Text="{Binding Company}" />
+                            <Label Grid.Column="1" Text="{Binding Email}" />
+                            <Label Grid.Column="1" Text="{Binding OfficeNumber}" />
+                            <Label Grid.Column="1" Text="{Binding PhoneNumber}" />
+                        </Grid>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
 
             <Button
                 x:Name="CounterBtn"
