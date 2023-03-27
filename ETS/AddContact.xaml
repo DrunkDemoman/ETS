@@ -29,6 +29,9 @@
         
         <Button Text="Submit"
                 Clicked="OnSubmitButtonClicked" />
+
+        <Label x:Name="statusMessage"
+           Grid.Row="2" />
     </VerticalStackLayout>
 
 
