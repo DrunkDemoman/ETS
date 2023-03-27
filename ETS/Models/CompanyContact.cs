@@ -8,8 +8,8 @@ using SQLite;
 
 namespace ETS.Models
 {
-    [Table("contacts")]
-    public class Contacts
+    [Table("company contact")]
+    public class CompanyContact
     {
         [PrimaryKey, AutoIncrement]
         public int Id { get; set; }
